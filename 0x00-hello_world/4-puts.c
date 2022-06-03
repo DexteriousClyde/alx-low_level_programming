@@ -1,6 +1,6 @@
 #include <stdio.h>
-/*
- * Main running program
+/**
+ * main - Main running program
  */
 int main(void)
 {
