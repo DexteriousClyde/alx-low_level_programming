@@ -3,14 +3,11 @@
 #include <stdio.h>
 
 /**
- *
  * main -main runnning code
- *
  * Return - 0
  */
 
 int main(void)
-
 {
 	int n;
 
