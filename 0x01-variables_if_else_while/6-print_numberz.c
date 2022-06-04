@@ -7,11 +7,11 @@
 
 int main(void)
 {
-       int letter;
+	int letter;
 
 	for (letter = 0; letter <= 9; letter++)
 	{
-		putchar(letter);
+		putchar(48 + letter);
 	}
 	putchar('\n');
 	return (0);
