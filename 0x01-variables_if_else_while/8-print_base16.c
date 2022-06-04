@@ -8,6 +8,8 @@ u * Return: 0
 int main(void)
 {
 	int letter;
+	
+	char a;
 
 	for (letter = 0; letter <= 9; letter++)
 	{
