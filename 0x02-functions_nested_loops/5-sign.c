@@ -2,7 +2,7 @@
 
 /**
  * print_sign - main code
- * @n - input
+ * @n: input
  * Return: sign and 1 or -1
  */
 
