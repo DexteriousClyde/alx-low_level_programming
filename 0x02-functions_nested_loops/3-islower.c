@@ -2,10 +2,11 @@
 
 /**
  * _islower - main code
+ * @c : int input
  * Return: 1 or 0
  */
 
 int _islower(int c)
 {
-	return (c > 96 && c <123);
+	return (c > 96 && c < 123);
 }
