@@ -14,7 +14,7 @@ int print_sign(int n)
 	if (n == 0)
 	{
 		m = '0';
-		i = 0
+		i = 0;
 	}
 	else if (n > 0)
 	{

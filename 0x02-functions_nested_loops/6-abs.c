@@ -2,7 +2,7 @@
 
 /**
  * _abs - main code
- * @n - input
+ * @n: input
  * Return: number
  */
 

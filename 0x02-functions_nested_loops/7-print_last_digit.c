@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - main code
- * @n - input
+ * @n: input
  * Return: n
  */
 
@@ -12,7 +12,7 @@ int print_last_digit(int n)
 	{
 		n = n * -1;
 	}
-	n = n % 10
+	n = n % 10;
 	_putchar(n + '0');
 	return (n);
 }
