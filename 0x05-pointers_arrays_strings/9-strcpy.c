@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** _strcpy - main code
+/** 
+ * _strcpy - main code
  * @dest: pointer
  * @src: pointer
  * Return: cpy
