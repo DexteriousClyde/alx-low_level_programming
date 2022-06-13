@@ -1,11 +1,25 @@
 #include "main.h"
 
 /**
- * rev_string - main code
- * @s: pointer
+ * puts_half - main code
+ * @str: pointer
  * Return: void
  */
 
-void rev_string(char *s)
+void puts_half(char *str)
 {
+	int j;
+	int i;
+
+	i = 0;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		j++;
+	}
+	i = j;
+	for (j = i / 2; j < i; j++)
+	{
+		_putchar(*(str + j));
+	}
+	_putchar('\n');
 }
