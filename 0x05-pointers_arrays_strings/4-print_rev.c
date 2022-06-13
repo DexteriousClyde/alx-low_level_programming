@@ -10,12 +10,15 @@ void print_rev(char *s)
 {
 	int i;
 	int j;
+	int l;
 
+	l = 0
 	j = 0;
-	while (s != '\0')
+	while (s[l] != '\0')
 	{
 		s++;
 		j++;
+		l++;
 	}
 	for (i = j; i >= 0; i--)
 	{
