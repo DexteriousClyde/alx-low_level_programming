@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * _strncpy - main code
+ * @dest: pointer
+ * @src: pointer
+ * @n: number
+ * Return: char
+ */
 
 char *_strncpy(char *dest, char *src, int n)
 {
