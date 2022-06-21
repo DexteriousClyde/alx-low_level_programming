@@ -3,8 +3,8 @@
 /**
  * _strchr - main code
  * @s: pointer
- * @c: character
- * Return: null or pointer of c
+ * @c: char
+ * Return: 0 or pointer
  */
 
 char *_strchr(char *s, char c)
@@ -17,6 +17,10 @@ char *_strchr(char *s, char c)
 		{
 			return (s + i);
 		}
+	}
+	if (s[i] == c)
+	{
+		return (s + i);
 	}
 	return ('\0');
 }
