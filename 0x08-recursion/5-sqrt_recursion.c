@@ -35,7 +35,7 @@ int check(int i, int j)
 	}
 	else if (i * i < n)
 	{
-		return check(i++, n);
+		return check(i + 1, n);
 	}
 	else
 	{
