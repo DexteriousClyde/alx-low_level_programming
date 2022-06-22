@@ -9,17 +9,17 @@
 
 int check_prime(int i, int j)
 {
-	if(j < 2 || j % i == 0)
+	if (j < 2 || j % i == 0)
 	{
 		return (0);
 	}
-	else if (i == j)
+	else if (i == j/2)
 	{
 		return (1);
 	}
 	else
 	{
-		return (check_prime(i++, j));
+		return (check_prime(i + 1, j));
 	}
 }
 
