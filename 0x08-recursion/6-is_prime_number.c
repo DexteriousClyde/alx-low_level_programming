@@ -13,7 +13,7 @@ int check_prime(int i, int j)
 	{
 		return (0);
 	}
-	else if (i == j/2)
+	else if (i == j / 2)
 	{
 		return (1);
 	}
