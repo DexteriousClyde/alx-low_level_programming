@@ -29,13 +29,13 @@ int _sqrt_recursion(int n)
 
 int check(int i, int j)
 {
-	if (i * i == n)
+	if (i * i == j)
 	{
 		return (i);
 	}
-	else if (i * i < n)
+	else if (i * i < j)
 	{
-		return check(i + 1, n);
+		return check(i + 1, j);
 	}
 	else
 	{
