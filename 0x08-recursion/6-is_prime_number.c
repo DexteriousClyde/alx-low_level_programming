@@ -1,17 +1,6 @@
 #include "main.h"
 
 /**
- * is_prime_number - main
- * @n: int input
- * Return: int
- */
-
-int is_prime_number(int n)
-{
-	return (check_prime(2, n));
-}
-
-/**
  * check_prime - alt
  * @i: int input
  * @j: int
@@ -32,4 +21,15 @@ int check_prime(int i, int j)
 	{
 		return (check_prime(i++, j));
 	}
+}
+
+/**
+ * is_prime_number - main
+ * @n: int input
+ * Return: int
+ */
+
+int is_prime_number(int n)
+{
+	return (check_prime(2, n));
 }
