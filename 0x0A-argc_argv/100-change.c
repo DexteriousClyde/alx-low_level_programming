@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
 	int a;
 	int ans;
 
-	(void)argc;
 	if (argc != 2)
 	{
 		printf("ERROR\n");
