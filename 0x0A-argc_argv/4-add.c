@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	sum = 0;
 	for (i = 1; i < argc; i++)
 	{
-		if (argv[i] < '0' || argv[i] > '9')
+		if (isdigit(argv[i] == 0))
 		{
 			printf("ERROR\n");
 			return (1);
