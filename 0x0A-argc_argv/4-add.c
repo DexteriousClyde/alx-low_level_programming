@@ -16,14 +16,14 @@ int main(int argc, char *argv[])
 	(void)argc;
 	for (i = 0; i < argc; i++)
 	{
-		if (argc < 3 || (argc[i] > '0' && argc[i] < '9'))
+		if (argc < 3 || (argv[i] > '0' && argv[i] < '9'))
 		{
 			printf("ERROR\n");
 			return (1);
 		}
 		else
 		{
-			sum += atoi(argc[i]);
+			sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);
