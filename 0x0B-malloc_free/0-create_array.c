@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * create_array - function
+ * *create_array - function
  * @size: size
  * @c: char
  * return: 0 or pointer
