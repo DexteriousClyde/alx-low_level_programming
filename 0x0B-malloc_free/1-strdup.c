@@ -5,7 +5,7 @@
 /**
  * *_strdup - function
  * @str: pointer
- * return: null or memory address
+ * Return: 0
  */
 
 char *_strdup(char *str)
@@ -13,13 +13,17 @@ char *_strdup(char *str)
 	int i, s;
 	char *ar;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	s = 0;
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		s += 1;
 	}
 	ar = malloc(s * (sizeof(*str)) + 1);
-	if (ar == NULL || str == NULL)
+	if (ar == NULL || *str == NULL)
 	{
 		return (NULL);
 	}
