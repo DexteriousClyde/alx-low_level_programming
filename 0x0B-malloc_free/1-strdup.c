@@ -3,21 +3,26 @@
 #include <stdio.h>
 
 /**
- * _strdup - function
+ * *_strdup - function
  * @str: pointer
  * return: null or memory address
  */
 
 char *_strdup(char *str)
 {
-	int i;
+	int i, s;
 	char *ar;
 
-	if (str == NULL)
+	s = 0;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		s += 1;
+	}
+	ar = malloc(s * (sizeof(*str)) + 1);
+	if (ar == NULL || str == NULL)
 	{
 		return (NULL);
 	}
-	ar = malloc(sizeof(*str) + 1);
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		ar[i] = str[i];
