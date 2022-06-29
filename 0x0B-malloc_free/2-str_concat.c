@@ -3,7 +3,7 @@
 
 /**
  * sizes - function
- * @word: string
+ * @s: string
  * Return: num
  */
 
