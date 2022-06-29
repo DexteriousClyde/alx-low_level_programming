@@ -18,32 +18,42 @@ char *str_concat(char *s1, char *s2)
 	size2 = 0;
 	if (s1 == NULL)
 	{
-		s1 = '\0';
+		size1 = 0;
+	}
+	else
+	{
+		for (i = 0; s1[i] != '\0'; i++)
+		{
+			size1 += 1;
+		}
 	}
 	if (s2 == NULL)
 	{
-		s2 = '\0';
+		size2 = 0;
 	}
-	for (i = 0; s1[i] != '\0'; i++)
+	else
 	{
-		size1 += 1;
+		for (i = 0; s2[i] != '\0'; i++)
+		{
+			size2 += 1;
+		}
 	}
-	for (i = 0; s2[i] != '\0'; i++)
-	{
-		size2 += 1;
-	}
+	/** printf("s1 = %d\ns2 = %d\n", size1, size2); */
 	ar = malloc((size1 * sizeof(*s1)) + (size2 * sizeof(*s2)) + 1);
 	if (ar == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < size1; i++)
+	for (i = 0; i < size1 + size2; i++)
 	{
-		ar[i] = s1[i];
-	}
-	for (i = i; i < size1 + size2; i++)
-	{
-		ar[i] = s2[i - size1];
+		if (i < size1)
+		{
+			ar[i] = s1[i];
+		}
+		else
+		{
+			ar[i] = s2[i - size1];
+		}
 	}
 	ar[i] = '\0';
 	return (ar);
