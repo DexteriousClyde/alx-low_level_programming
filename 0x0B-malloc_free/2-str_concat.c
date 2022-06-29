@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s2 == NULL)
 	{
-		size2 = 0;
+		continue;
 	}
 	else
 	{
@@ -38,7 +38,6 @@ char *str_concat(char *s1, char *s2)
 			size2 += 1;
 		}
 	}
-	/** printf("s1 = %d\ns2 = %d\n", size1, size2); */
 	ar = malloc((size1 * sizeof(*s1)) + (size2 * sizeof(*s2)) + 1);
 	if (ar == NULL)
 	{
