@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stsio.h>
+#include <stdio.h>
 
 /**
  * free_grid - function
