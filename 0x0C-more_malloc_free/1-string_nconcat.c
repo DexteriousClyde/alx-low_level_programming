@@ -55,5 +55,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			arr[i] = s2[i-j1];
 		}
 	}
+	arr[i] = '\0';
 	return (arr);
 }
