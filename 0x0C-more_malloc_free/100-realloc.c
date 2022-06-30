@@ -7,6 +7,7 @@
  * @ptr: pointer
  * @old_size: int
  * @new_size: int
+ * Return: void or int
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -14,7 +15,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	char *ar, *arr;
 	unsigned int i;
 
-	if(ptr != NULL)
+	if (ptr != NULL)
 	{
 		ar = ptr;
 	}
