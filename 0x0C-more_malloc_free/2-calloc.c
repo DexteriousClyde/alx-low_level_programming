@@ -6,7 +6,7 @@
  * _calloc - func
  * @nmemb: int
  * @size: int
- * Return void
+ * Return: void
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
