@@ -50,7 +50,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			arr[i] = s1[i];
 		else
 		{
-			if(n < k2 && i - j1 >= n)
+			if (n < k2 && i - j1 >= n)
 			{
 				break;
 			}
