@@ -27,7 +27,7 @@ int sizes(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *arr;
-	int i, j1, k2;
+	unsigned int i, j1, k2;
 	
 	i = 0;
 	if (s1 == NULL)
@@ -39,17 +39,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		k2 = sizes(s2);
 	if (k2 > n)
-		arr = (j1 + 1 + (n * sizeof(char)));
+		arr = malloc(j1 + 1 + (n * sizeof(char)));
 	else
 		arr = malloc(k2 + j1 + 1);
 	if (arr == NULL)
 		return (NULL);
 	for (i = 0; i < j1 + k2; i++)
+	{
 		if (i < j1)
 			arr[i] = s1[i];
 		else
 		{
-			if(n < k2 && i - j1 => n)
+			if(n < k2 && i - j1 >= n)
 				break;
 			arr[i] = s2[i-j1];
 		}
