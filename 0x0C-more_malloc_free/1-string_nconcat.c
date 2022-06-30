@@ -17,7 +17,7 @@ int sizes(char *s)
 }
 
 /**
- * *string_nconcat - function
+ * string_nconcat - function
  * @s1: pointer
  * @s2: pointer
  * @n: int
@@ -51,7 +51,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		else
 		{
 			if(n < k2 && i - j1 >= n)
+			{
 				break;
+			}
 			arr[i] = s2[i-j1];
 		}
 	}
