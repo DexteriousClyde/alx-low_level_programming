@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * _realloc -fiunc
+ * _realloc - func
  * @ptr: pointer
  * @old_size: int
  * @new_size: int
@@ -28,7 +28,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
-		return(0);
+		return (0);
 	}
 	arr = malloc(new_size);
 	if (arr == NULL || arr == 0)
@@ -38,5 +38,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		arr[i] = ar[i];
 	}
 	free(ptr);
+
 	return (arr);
 }
