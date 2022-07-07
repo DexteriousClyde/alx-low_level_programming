@@ -18,7 +18,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		return;
 	else
 	{
-		for (start = 0; i < size; start++)
+		for (start = 0; start < size; start++)
 		{
 			action(array[start]);
 		}
