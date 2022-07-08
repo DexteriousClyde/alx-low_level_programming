@@ -4,45 +4,45 @@
 #include <stdio.h>
 
 /**
- * i - funct
+ * innt - funct
  * @list: li
  * Return: void
  */
 
-void i(va_list list)
+void innt(va_list list)
 {
 	printf("%d", va_arg(list, int));
 }
 
 /**
- * c - func
+ * chr - func
  * @list: li
  * Return: void
  */
 
-void c(va_list list)
+void chr(va_list list)
 {
 	printf("%c", va_arg(list, int));
 }
 
 /**
- * f - funct
+ * flt - funct
  * @list: li
  * Return: void
  */
 
-void f(va_list list)
+void flt(va_list list)
 {
 	printf("%f", va_arg(list, double));
 }
 
 /**
- * s - funct
+ * str - funct
  * @list: li
  * Return: void
  */
 
-void s(va_list list)
+void str(va_list list)
 {
 	char *c;
 	
@@ -65,11 +65,11 @@ void print_all(const char * const format, ...)
 	int i,j;
 	char *gh;
 
-	vari v[] = {
-		{"c", c},
-		{"i", i},
-		{"s", s},
-		{"f", f},
+	type_t vari[] = {
+		{"c", chr},
+		{"i", innt},
+		{"s", str},
+		{"f", flt},
 		{NULL, NULL}
 	};
 
@@ -81,12 +81,11 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while(j < 4)
 		{
-			if (format[i] == *(v[j]).op)
+			if (format[i] == *(vari[j]).ka)
 			{
-				print("%s", gh);
-				v[j].f.(li);
+				printf("%s", gh);
+				vari[j].fl(li);
 				gh = ", ";
-				break;
 			}
 			j++;
 		}
