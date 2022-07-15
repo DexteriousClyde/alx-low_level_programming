@@ -2,6 +2,7 @@
 
 /**
  * first - main
+ * Return: void
  */
 
 void __attribute__ ((constructor)) first()
