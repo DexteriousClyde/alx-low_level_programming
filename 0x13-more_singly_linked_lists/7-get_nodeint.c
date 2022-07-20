@@ -21,7 +21,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	for (ans = 0; ans < index; ans++)
 	{
 		copy = copy->next;
-		if(copy == NULL)
+		if (copy == NULL)
 			return (0);
 	}
 	return (copy);
