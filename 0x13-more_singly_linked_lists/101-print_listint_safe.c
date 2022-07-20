@@ -9,7 +9,7 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	long int a;
-	size_t = i;
+	size_t i;
 
 	for (i = 0; head != NULL; i++)
 	{

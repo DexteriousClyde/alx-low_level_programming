@@ -10,7 +10,7 @@ size_t free_listint_safe(listint_t **h)
 {
 	size_t l;
 	int sub;
-	listint_t = *cpy;
+	listint_t *cpy;
 
 	if (h == NULL || *h == NULL)
 		return (0);
