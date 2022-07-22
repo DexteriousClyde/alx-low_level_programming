@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 /**
  * binary_to_uint - main
@@ -12,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int n;
 
 	n = 0;
-	if (n == NULL)
+	if (b == NULL)
 		return (0);
 	for (i = 0; b[i]; i++)
 	{
