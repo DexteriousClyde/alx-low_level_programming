@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <fcntl.h>
-#include <sys/tpyes.h>
+#include <sys/types.h>
 #include <sys/stat.h>
 
 int _putchar(char c);
