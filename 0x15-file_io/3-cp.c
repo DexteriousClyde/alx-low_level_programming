@@ -42,12 +42,12 @@ int main(int argc, char *argv[])
 	j = close(file_w);
 	if (i < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_r);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_r);
 		exit(100);
 	}
 	if (j < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_w);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_w);
 		exit(100);
 	}
 	return (0);
